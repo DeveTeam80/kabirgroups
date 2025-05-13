@@ -1,0 +1,31 @@
+#: locale=en
+
+## Hotspot
+
+### Text
+HotspotPanoramaOverlayTextImage_BF74FA52_AC35_0B30_41D6_B22D98FE2B3F.text = 67 PLOTS 23100 Sqm
+HotspotPanoramaOverlayTextImage_A3870640_AC17_1B10_41DB_230C33063B64.text = MIDC INDUSTRIAL HUB
+HotspotPanoramaOverlayTextImage_A3DBCA03_AC1F_0B10_41C9_F02E53BE3DC8.text = RESIDENTIAL NA PLOTS 
+
+## Media
+
+### Image
+imlevel_B9AAD035_AC0D_7770_41C2_CC984ACD6EA4.url = media/panorama_A707A8A7_AC0F_3710_41E0_2D8C26328A56_HS_eusyeoko_en.webp
+imlevel_BEA2C203_AC0D_7B10_41DE_C47B5C3D2B42.url = media/panorama_A707A8A7_AC0F_3710_41E0_2D8C26328A56_HS_tb5kmafs_en.webp
+imlevel_BDBD2170_AC33_19F0_41D2_A9BF6C401CDB.url = media/panorama_A707A8A7_AC0F_3710_41E0_2D8C26328A56_HS_y6cnapbl_en.webp
+
+### Title
+panorama_A707A8A7_AC0F_3710_41E0_2D8C26328A56.label = DJI_0977
+
+## Skin
+
+### Image
+Image_BC1F6E28_AC35_0B10_41DF_DD9EED6A9336.url = skin/Image_BC1F6E28_AC35_0B10_41DF_DD9EED6A9336_en.png
+Image_BD00D861_AC33_3710_41C0_81D4318A0711.url = skin/Image_BD00D861_AC33_3710_41C0_81D4318A0711_en.png
+
+## Tour
+
+### Description
+
+### Title
+tour.name = Untitled 18

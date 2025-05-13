@@ -1,0 +1,53 @@
+# Enable Rewrite Engine
+RewriteEngine On
+
+# Allow direct access to mail.php
+<Files "mail.php">
+  Require all granted
+</Files>
+
+# Force HTTPS for all traffic
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://kabirgroups.com/$1 [R=301,L]
+
+# User-friendly URLs (hide .html extension in browser)
+RewriteBase /
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/([^\s]+)\.html [NC]
+RewriteRule ^([^\s]+)\.html$ /$1 [R=301,L]
+
+# Internally rewrite requests to .html files
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.+?)/?$ $1.html [L]
+
+# Custom 404 page
+ErrorDocument 404 /error.html
+
+# Gzip Compression
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html
+  AddOutputFilterByType DEFLATE text/css
+  AddOutputFilterByType DEFLATE text/javascript
+  AddOutputFilterByType DEFLATE text/xml
+  AddOutputFilterByType DEFLATE text/plain
+  AddOutputFilterByType DEFLATE image/x-icon
+  AddOutputFilterByType DEFLATE image/svg+xml
+  AddOutputFilterByType DEFLATE application/rss+xml
+  AddOutputFilterByType DEFLATE application/javascript
+  AddOutputFilterByType DEFLATE application/x-javascript
+  AddOutputFilterByType DEFLATE application/xml
+  AddOutputFilterByType DEFLATE application/xhtml+xml
+  AddOutputFilterByType DEFLATE application/x-font
+  AddOutputFilterByType DEFLATE application/x-font-truetype
+  AddOutputFilterByType DEFLATE application/x-font-ttf
+  AddOutputFilterByType DEFLATE application/x-font-otf
+  AddOutputFilterByType DEFLATE application/x-font-opentype
+  AddOutputFilterByType DEFLATE application/vnd.ms-fontobject
+  AddOutputFilterByType DEFLATE font/ttf
+  AddOutputFilterByType DEFLATE font/otf
+  AddOutputFilterByType DEFLATE font/opentype
+
+  # Compatibility for older browsers
+  BrowserMatch ^Mozilla/4 gzip-only-text/html
+  BrowserMatch ^Mozilla/4\.0[678] no-gzip
+  BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+</IfModule>
