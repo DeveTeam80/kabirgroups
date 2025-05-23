@@ -4,7 +4,7 @@ ini_set('display_errors', 1);
 
 // Set FROM and TO email addresses
 $toEmail = "info@kabirgroups.com, lokhandwalahvsbizz@gmail.com";
-$fromEmail = "no-reply@kabirgroups.com";
+$fromEmail = "forms@kabirgroups.com";
 
 // Check required fields
 if (
