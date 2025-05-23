@@ -3,8 +3,8 @@ error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
 // Set FROM and TO email addresses
-$toEmail = "shalakakvsbizz@gmail.com";
-$fromEmail = "shalakakvsbizz@gmail.com";
+$toEmail = "info@kabirgroups.com";
+$fromEmail = "info@kabirgroups.com";
 
 // Check required fields
 if (
